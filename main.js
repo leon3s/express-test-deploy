@@ -8,7 +8,7 @@ app.get('/README.md', (req, res) => {
   const buff = fs.readFileSync(path.join(__dirname, 'README.md'));
 res.send(`
   <html>
-  <body style="margin:0px;padding:0px;height:100%;width:100%;background-color:black;">
+  <body style="margin:0px;padding:0px;height:100%;width:100%;background-color:rgba(0, 0, 0, 0.18);">
   <div style="width:50%;height:50%;margin:auto;padding:18px;">
     ${buff.toString().split('\n').reduce((acc, line) => {
       const char = line.charAt(0);
@@ -17,7 +17,7 @@ res.send(`
       if (char === '#') {
         fontSize = 16;
       }
-      acc += `<${balise} style="color: white; font-size:${fontSize}px">`
+      acc += `<${balise} style="color: black; font-size:${fontSize}px; letter-spacing: 1px;font-weight:bold;">`
       acc += line;
       acc += `</${balise}>`
       acc += '</br>'
