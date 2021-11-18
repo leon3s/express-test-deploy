@@ -17,7 +17,7 @@ res.send(`
       if (char === '#') {
         fontSize = 16;
       }
-      acc += `<${balise} style="color: black; font-size:${fontSize}px; letter-spacing: 1px;">`
+      acc += `<${balise} style="color: black; font-size:${fontSize}px; letter-spacing: 1px;font-weight:bold;">`
       acc += line;
       acc += `</${balise}>`
       acc += '</br>'
