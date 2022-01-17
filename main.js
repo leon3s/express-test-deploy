@@ -33,6 +33,7 @@ res.send(`
 
 app.get('/crash', () => {
   app.toto();
+  process.exit(3123);
 });
 
 app.get('/', (req, res) => {
