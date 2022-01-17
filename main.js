@@ -4,6 +4,8 @@ const express = require('express');
 const app = express();
 const port = +(process.env.PORT || 8932);
 
+app.nop();
+
 app.get('/README.md', (req, res) => {
   const buff = fs.readFileSync(path.join(__dirname, 'README.md'));
 res.send(`
@@ -29,7 +31,11 @@ res.send(`
   </body>
   </html>
 `);
-})
+});
+
+app.get('/crash', () => {
+  app.toto();
+});
 
 app.get('/', (req, res) => {
   const response = JSON.stringify({
