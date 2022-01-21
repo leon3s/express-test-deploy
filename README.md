@@ -27,8 +27,11 @@ new-branhc dsa das
 sd ad as
 dsa asd as 
 
+
 gg branch
 
 xd
 
 merge into development.
+
+conflict resolve.
