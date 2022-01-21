@@ -27,7 +27,6 @@ new-branhc dsa das
 sd ad as
 dsa asd as 
 
-
 gg branch
 
 xd
@@ -35,3 +34,4 @@ xd
 merge into development.
 
 conflict resolve.
+last test before league.
