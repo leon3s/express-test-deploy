@@ -43,9 +43,8 @@ app.get('/', (req, res) => {
     env: process.env,
   });
   console.log(response);
-  setTimeout(() => {
-    res.send(response);
-  }, 2000);
+  
+  res.send(response);
 });
 
 app.listen(port, () => {
